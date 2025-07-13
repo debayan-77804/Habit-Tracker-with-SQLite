@@ -47,10 +47,8 @@ The purpose of this app is to help users build and maintain positive daily habit
 1. Make sure Python 3 is installed.
 
 2. Run the GUI script:
-
-   ```bash
-   python habit_tracker_gui.py
-   ```
+   'habit_tracker_gui.py'
+   
 
 3. Use the interface to:
 
@@ -61,10 +59,7 @@ The purpose of this app is to help users build and maintain positive daily habit
 ### To run the CLI version:
 
 1. Run:
-
-   ```bash
-   python habit_tracker.py
-   ```
+'habit_tracker.py'
 
 2. Use the menu to add, complete, and view habits from the terminal.
 
