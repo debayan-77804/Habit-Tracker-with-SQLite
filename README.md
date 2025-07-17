@@ -1,82 +1,83 @@
-# Habit Tracker App (Python + SQLite + Tkinter)
+Habit Tracker CLI App (Python + SQLite)
 
-## What is this project about?
+Overview
 
-This is a Habit Tracking App developed in Python. It comes in two versions:
+This is a Command-Line Interface (CLI) based Habit Tracker application developed in Python. The app helps users maintain consistency with their daily habits by tracking completion, calculating streaks, and offering reminders. All data is stored locally using an SQLite database.
 
-* A command-line (CLI) version: `habit_tracker.py`
-* A GUI version with additional features: `habit_tracker_gui.py`
+Features
 
-The purpose of this app is to help users build and maintain positive daily habits by tracking progress over time.
+Add new habits
 
-### Users can:
+Edit existing habit names
 
-* Add their personal habits (e.g., Exercise, Study, Drink Water)
-* Mark habits as completed each day
-* Track consistency through a streak counter
-* View habit completion trends over the past 7 and 30 days
-* Export their habit history to a CSV file
-* Receive reminders every 4 hours (GUI version)
+Delete habits
 
----
+Mark habits as completed for the current day
 
-## Key Features (GUI version)
+View all habits with streaks and dates
 
-* Add & Delete Habits
-* Track Daily Progress
-* Weekly/Monthly Statistics
-* Export to CSV
-* Pop-up Reminders every 4 hours
+Weekly and Monthly Statistics (completion count)
 
----
+Export all habit data to a CSV file
 
-## Technologies Used
+Reminder Functionality: Pops up every 4 hours to remind users to check in
 
-* Python 3.x
-* Tkinter – GUI interface
-* SQLite – Local database
-* CSV module – Data export
-* Threading – Background reminders (GUI)
+Technologies Used
 
----
+Python 3
 
-## How to Run This App
+SQLite (via sqlite3 module)
 
-### To run the GUI version:
+CSV module
 
-1. Make sure Python 3 is installed.
+datetime module
 
-2. Run the GUI script:
-   'habit_tracker_gui.py'
-   
+threading for background reminders
 
-3. Use the interface to:
+How to Run
 
-   * Enter a habit
-   * Mark as complete
-   * View streaks, stats, and export
+Ensure you have Python 3 installed on your system.
 
-### To run the CLI version:
+Save the script as habit_tracker.py.
 
-1. Run:
-'habit_tracker.py'
+Open your terminal and navigate to the folder containing the script.
 
-2. Use the menu to add, complete, and view habits from the terminal.
+Run the script:
 
----
+python habit_tracker.py
 
-## Files in this Project
+App Menu Options
 
-> Note: The `database.db` file is automatically created the first time you run the app. You do not need to include it in the repository.
+When running, the app will display the following menu:
 
-* `habit_tracker.py` – CLI version (basic tracking)
-* `habit_tracker_gui.py` – Full-featured GUI version
-* `README.md` – Project documentation
+ >> Habit Tracker Menu <<
+1. Add Habit
+2. Edit Habit Name
+3. Delete Habit
+4. Mark Habit as Completed
+5. View All Habits
+6. Weekly and Monthly Statistics
+7. Export Habit Data to CSV
+8. Exit
 
----
+Export to CSV
 
-## Bonus Functionality (GUI only)
+When you choose option 7, the app creates a file named habit_report.csv in the same directory.
 
-* Export data to `.csv`
-* Weekly and monthly stats view
-* Automatic pop-up reminders every 4 hours
+Open it using any spreadsheet viewer to review your data.
+
+Notes
+
+All habits are stored in database.db (auto-created locally).
+
+Reminder functionality runs in the background and prompts you every 4 hours.
+
+File Summary
+
+habit_tracker.py - CLI app with all core and bonus features
+
+database.db - SQLite database file (auto-generated)
+
+habit_report.csv - Optional file generated when exporting data
+
+This project is useful for students, professionals, and anyone who wants to build and maintain good habits through self-monitoring.
