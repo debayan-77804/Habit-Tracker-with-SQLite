@@ -1,4 +1,4 @@
-Habit Tracker CLI App (Python + SQLite)
+##Habit Tracker CLI App (Python + SQLite)##
 
 Overview
 
